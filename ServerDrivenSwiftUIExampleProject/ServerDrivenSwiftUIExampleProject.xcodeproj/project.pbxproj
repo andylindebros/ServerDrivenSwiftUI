@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6587A3828C771B800DF4863 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6587A3728C771B800DF4863 /* ContentViewModel.swift */; };
+		E6587A3B28C7782700DF4863 /* ServerDrivenSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E6587A3A28C7782700DF4863 /* ServerDrivenSwiftUI */; };
+		E6587A3D28C7798300DF4863 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6587A3C28C7798300DF4863 /* ViewState.swift */; };
+		E6587A4028C779C100DF4863 /* LindebrosApiClient in Frameworks */ = {isa = PBXBuildFile; productRef = E6587A3F28C779C100DF4863 /* LindebrosApiClient */; };
 		E6736D1C28C332560045177E /* ServerDrivenSwiftUIExampleProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6736D1B28C332560045177E /* ServerDrivenSwiftUIExampleProjectApp.swift */; };
 		E6736D1E28C332560045177E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6736D1D28C332560045177E /* ContentView.swift */; };
 		E6736D2028C332580045177E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6736D1F28C332580045177E /* Assets.xcassets */; };
@@ -14,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6587A3728C771B800DF4863 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		E6587A3C28C7798300DF4863 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		E6736D1828C332560045177E /* ServerDrivenSwiftUIExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerDrivenSwiftUIExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6736D1B28C332560045177E /* ServerDrivenSwiftUIExampleProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDrivenSwiftUIExampleProjectApp.swift; sourceTree = "<group>"; };
 		E6736D1D28C332560045177E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,18 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6587A3B28C7782700DF4863 /* ServerDrivenSwiftUI in Frameworks */,
+				E6587A4028C779C100DF4863 /* LindebrosApiClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6587A3928C7782700DF4863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6736D0F28C332560045177E = {
 			isa = PBXGroup;
 			children = (
 				E6736D2928C3328A0045177E /* Packages */,
 				E6736D1A28C332560045177E /* ServerDrivenSwiftUIExampleProject */,
 				E6736D1928C332560045177E /* Products */,
+				E6587A3928C7782700DF4863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,9 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				E6736D1B28C332560045177E /* ServerDrivenSwiftUIExampleProjectApp.swift */,
+				E6587A3728C771B800DF4863 /* ContentViewModel.swift */,
 				E6736D1D28C332560045177E /* ContentView.swift */,
 				E6736D1F28C332580045177E /* Assets.xcassets */,
 				E6736D2128C332580045177E /* Preview Content */,
+				E6587A3C28C7798300DF4863 /* ViewState.swift */,
 			);
 			path = ServerDrivenSwiftUIExampleProject;
 			sourceTree = "<group>";
@@ -93,6 +111,10 @@
 			dependencies = (
 			);
 			name = ServerDrivenSwiftUIExampleProject;
+			packageProductDependencies = (
+				E6587A3A28C7782700DF4863 /* ServerDrivenSwiftUI */,
+				E6587A3F28C779C100DF4863 /* LindebrosApiClient */,
+			);
 			productName = ServerDrivenSwiftUIExampleProject;
 			productReference = E6736D1828C332560045177E /* ServerDrivenSwiftUIExampleProject.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +143,9 @@
 				Base,
 			);
 			mainGroup = E6736D0F28C332560045177E;
+			packageReferences = (
+				E6587A3E28C779C100DF4863 /* XCRemoteSwiftPackageReference "LindebrosApiClient" */,
+			);
 			productRefGroup = E6736D1928C332560045177E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +174,8 @@
 			files = (
 				E6736D1E28C332560045177E /* ContentView.swift in Sources */,
 				E6736D1C28C332560045177E /* ServerDrivenSwiftUIExampleProjectApp.swift in Sources */,
+				E6587A3D28C7798300DF4863 /* ViewState.swift in Sources */,
+				E6587A3828C771B800DF4863 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +376,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6587A3E28C779C100DF4863 /* XCRemoteSwiftPackageReference "LindebrosApiClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lindebrothers/LindebrosApiClient";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6587A3A28C7782700DF4863 /* ServerDrivenSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ServerDrivenSwiftUI;
+		};
+		E6587A3F28C779C100DF4863 /* LindebrosApiClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6587A3E28C779C100DF4863 /* XCRemoteSwiftPackageReference "LindebrosApiClient" */;
+			productName = LindebrosApiClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6736D1028C332560045177E /* Project object */;
 }

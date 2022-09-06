@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "lindebrosapiclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lindebrothers/LindebrosApiClient",
+      "state" : {
+        "revision" : "9b63eeeb378160eec068b043ed067befbb9557a7",
+        "version" : "4.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}
