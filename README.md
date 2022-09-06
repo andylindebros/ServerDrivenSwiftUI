@@ -30,3 +30,19 @@ Models.VStack(spacing: 20) {
 ## See example apps within this package
 - iOS App: ServerDrivenSwiftUIExampleProject
 - Vapor server - ServerExample
+
+
+### Run the example apps:
+1. open up your terminal
+2. navigate to ServerExample
+```bash
+cd ServerExample
+```
+3. enter `vapor run` to start the server
+```Bash
+vapor run
+ ```
+
+ 4. Open ServerDrivenSwiftUIExampleProject in xcode.
+ 5. Compile and run
+ 6. Should should now be able to see the server rendered content in the app.
