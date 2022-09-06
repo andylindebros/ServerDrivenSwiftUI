@@ -2,7 +2,7 @@
 
 Maintain ios apps without making app releases.
 
-Deploy changes to the server and users will recieve changes within minutes.
+Deploy changes to the server and users will receive changes within minutes.
 
 This package describes how you can use server-driven UI together with SwiftUI.
 
