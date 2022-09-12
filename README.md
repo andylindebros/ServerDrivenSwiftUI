@@ -42,6 +42,8 @@ cd ServerDrivenSwiftUI/ServerExample
 ```Bash
 brew install vapor
 ```
+For more info how vapor works, see https://docs.vapor.codes
+
 4. enter `vapor run` to start the server
 ```Bash
 vapor run
