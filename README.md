@@ -38,7 +38,11 @@ Models.VStack(spacing: 20) {
 ```bash
 cd ServerDrivenSwiftUI/ServerExample
 ```
-3. enter `vapor run` to start the server
+3. Install vapor
+```Bash
+brew install vapor
+```
+4. enter `vapor run` to start the server
 ```Bash
 vapor run
  ```
